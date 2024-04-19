@@ -16,12 +16,12 @@
                         class="bg-white h-16 w-auto rounded-lg text-left flex items-center p-8">Dashboard</a>
                     <a href
                         class=" h-16 w-auto rounded-lg text-left flex items-center p-8">Product</a>
-                    <a href
+                    <!-- <a href
                         class=" h-16 w-auto rounded-lg text-left flex items-center p-8">Rekomendsi
                         Pendakian</a>
                     <a href
                         class=" h-16 w-auto rounded-lg text-left flex items-center p-8">Tentang
-                        Kami</a>
+                        Kami</a> -->
                     <a href="./login_page.html"
                         class=" h-16 w-auto rounded-lg text-left flex items-center p-8">Logout</a>
                 </div>
@@ -47,8 +47,10 @@
                             <td class="p-3 text-left">085156437533</td>
                             <td
                                 class="border-grey-light border hover:bg-gray-100 p-3 text-blue-400 hover:text-blue-600 hover:font-medium cursor-pointer">Ubah</td>
-                            <td
-                                class="border-grey-light border hover:bg-gray-100 p-3 text-red-400 hover:text-red-600 hover:font-medium cursor-pointer">Delete</td>
+                                <td>
+                                    <a href="delete.php?id=<?= $arr['id'][$i] ?>" class="btn-delete border-grey-light border hover:bg-gray-100 p-3 text-red-400 hover:text-red-600 hover:font-medium cursor-pointer">Delete</a>
+                                </td>
+                                
                         </tr>
                     </tbody>
                 </table>
