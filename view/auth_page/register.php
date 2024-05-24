@@ -12,7 +12,7 @@
                 <!-- Register -->
                 <p class="font-semibold text-3xl">Registrasi</p>
                 <!-- Input Nama -->
-                <form action="./login_page.html" class="flex flex-col gap-3">
+                <form action="<?= urlpath('register'); ?>" method="POST" enctype="multipart/form-data" class="flex flex-col gap-3">
                     <label for="nama">Nama</label>
                     <input type="text" id="nama"
                         class="w-full border border-gray-300 rounded-sm py-2">
@@ -31,7 +31,7 @@
                 </form>
                 <div>
                     <p class="w-full text-center p-8">
-                        Sudah punya akun? <a href="./login_page.html">Login</a>
+                        Sudah punya akun? <a href="<?= urlpath('login'); ?>">Login</a>
                     </p>
                 </div>
             </div>
